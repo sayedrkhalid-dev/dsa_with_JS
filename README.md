@@ -3,29 +3,17 @@
 Selection Sort হলো একটি comparison-based, in-place sorting algorithm।
 এটি প্রতি iteration-এ:
 Unsorted অংশ থেকে সবচেয়ে ছোট element নির্বাচন করে
-
-
 সেটিকে current index-এ বসিয়ে দেয়
-
-
 
 🔹 ২. Algorithm-এর মূল ধারণা
 Array–কে দুই ভাগে ভাগ করা হয়:
 [ Sorted অংশ | Unsorted অংশ ]
 শুরুতে:
 Sorted অংশ = খালি
-
-
 Unsorted অংশ = পুরো array
-
-
 প্রতি iteration-এ:
 Unsorted অংশ থেকে minimum element খুঁজে বের করা হয়
-
-
 সেটিকে sorted অংশে যোগ করা হয়
-
-
 
 🔹 ৩️. ধাপে ধাপে উদাহরণ
 ধরি array:
@@ -62,16 +50,12 @@ Sorted অংশ = [10, 20, 30, 40]
 শেষ element (50) নিজে থেকেই sorted।
  কারণ একটিমাত্র element কখনো unsorted হতে পারে না।
 
-🔹 ৪️. কেন i < arr.length - 1 যথেষ্ট?
+🔹 ৪. কেন i < arr.length - 1 যথেষ্ট?
 যখন:
 i = n - 2
 তখন:
 প্রথম n-1 element সঠিক জায়গায়
-
-
 শেষ ১টি element স্বয়ংক্রিয়ভাবে সঠিক
-
-
 তাই শেষ iteration আলাদা করে দরকার হয় না।
 
 🔹 ৫️. Pseudocode
@@ -84,16 +68,11 @@ For i from 0 to n-2:
   
    Swap arr[i] and arr[minIndex]
 
-🔹 ৬️ Complexity Analysis
+🔹 ৬️. Complexity Analysis
 ⏱ Time Complexity
 Best Case: O(n²)
-
-
 Average Case: O(n²)
-
-
 Worst Case: O(n²)
-
 
 কারণ:
  Nested loop → n × n → O(n²)
@@ -102,23 +81,18 @@ Selection sort কখনো O(n) হয় না।
 💾 Space Complexity
 O(1)
 
-
 কারণ:
  এটি in-place sorting করে (extra memory ব্যবহার করে না)।
 
-🔹 ৭️ গুরুত্বপূর্ণ বৈশিষ্ট্য
+🔹 ৭️. গুরুত্বপূর্ণ বৈশিষ্ট্য
 ✔ In-place
  ✔ Simple logic
  ❌ Not Stable (default implementation)
  ❌ Not Adaptive
  ❌ Large dataset-এর জন্য efficient না
 
-🔹 ৮️ কখন ব্যবহার করা যায়?
+🔹 ৮️. কখন ব্যবহার করা যায়?
 ছোট dataset
-
-
 Memory constraint থাকলে
-
-
 শিক্ষামূলক উদ্দেশ্যে algorithm বোঝার জন্য
 
